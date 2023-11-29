@@ -1,0 +1,48 @@
+#English version (İngilizce versiyonu)
+#										made by aItay02(github profile)
+name = (input("What is your name? "))
+lastname = (input("What is your surname? "))
+age = int(input("How old are you? "))
+status = input("Do you go to school? (yes: y, no: n) ")
+military = input("Have you done your military service? (yes: y, no: n) ")
+
+if age < 18:
+	print("Dear " + name.title() + ", " + "you are not old enough to join the military service.")
+
+elif age > 18 and status == "y" and military == "n":
+	print("Dear " + name.title() + ", " "when you finish school, you will join the military.")
+
+elif age > 18 and status == "y" and military == "y":
+	print("Dear " + name.title() + ", " "since your military service has been completed, you do not need to re-join the military service.")
+
+elif age > 18 and status == "n" and military == "y":
+	print("Dear " + name.title() + ", " "since your military service has been completed, you do not need to re-join the military service.")
+
+elif age > 18 and status == "n" and military == "n":
+	print("Dear " + name.title() + ", " "you are over the age to join the military. Join the military service within 120 days, otherwise you will be considered a deserter.")
+#			README this script for python
+
+
+# Türkçe versiyonu (Turkish version)
+#										made by aItay02(gitpub profile)
+isim = (input("İsminiz nedir? "))
+soyisim = (input("Soyisminiz nedir? "))
+yas = int(input("Yaşınız kaç? "))
+okumadurumu = input("Okuyor musunuz? (evet: e, hayır: h) ")
+askerlik = input("Askerliğinizi yaptınızmı? (evet: e, hayır: h) ")
+
+if yas < 18:
+	print("Sayın " + isim.title() + ", " + "Yaşınız askerliğe katılmanız için yeterli değildir.")
+
+elif yas > 18 and okumadurumu == "e" and askerlik == "h":
+	print("Sayın " + isim.title() + ", " "okulunuz bittiğinde askere gideceksizniz.")
+
+elif yas > 18 and okumadurumu == "e" and askerlik == "e":
+	print("Sayın " + isim.title() + ", " "askerliğinizi tamamladığınızdan dolayı askerliğe tekrar katılmanıza gerek yok.")
+
+elif yas > 18 and okumadurumu == "h" and askerlik == "e":
+	print("Sayın " + isim.title() + ", " "askerliğinizi tamamladığınızdan dolayı askerliğe tekrar katılmanıza gerek yok.")
+
+elif yas > 18 and okumadurumu == "h" and askerlik == "h":
+	print("Sayın " + isim.title() + ", " "askerliğe katılma yaşınız dolmuştur. 120 gün içerisinde askerliğe katılınız, aski takdire asker kaçağı kabul edilirsiniz.")
+#		ÖNEMLİ bu kodlama python içindir
